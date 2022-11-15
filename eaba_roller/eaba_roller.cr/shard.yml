@@ -1,0 +1,13 @@
+name: eaba_roller
+version: 0.1.0
+
+authors:
+  - Kirk Haines <wyhaines@gmail.com>
+
+targets:
+  eaba_roller:
+    main: src/eaba_roller_bin.cr
+
+crystal: 1.7.0-dev
+
+license: MIT

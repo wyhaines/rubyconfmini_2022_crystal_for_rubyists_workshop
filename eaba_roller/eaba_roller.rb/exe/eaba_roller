@@ -1,0 +1,5 @@
+#!/bin/ruby
+
+require "eaba_roller"
+
+EabaRoller.run
