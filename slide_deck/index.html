@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>RubyConfMini 2022 Crystal for Rubyists</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+		<!-- User CSS -->
+		<style id="user-css-output" type="text/css">
+			.reveal .slides {
+  color: #f1f3f2;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+}
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3,
+.reveal .slides h4,
+.reveal .slides h5,
+.reveal .slides h6 {
+  background-color: #282828;
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+		</style>
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-black-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="2bafdc1515087a1e5b6ed9ec87e3d4ce"><div class="sl-block" data-block-type="text" style="width: 806px; left: 131.5px; top: 49px; height: auto;" data-block-id="0c2603d6c76676fa7ec7a0f91dacbc85"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Crystal for Rubyists</h1>
+
+<p>RubyConf Mini 2022</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-0cb446" data-block-id="a80ba2582d53c3c6abd3952a83d63959" style="width: 377px; height: 377px; left: -57px; top: 140px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="960" data-natural-height="960" data-lazy-loaded="" data-src="rubyconfmini-2022-crystal_for_rubyists/50ba62c31bf2da280263f8fd6dfcea21.svg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" data-block-id="1fc3b3ef568f38dff3ff9191d7245b6f" style="height: auto; width: 550px; left: 387.5px; top: 381px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left">Kirk Haines</p>
+
+<p style="text-align:left"><span style="font-size:0.7em">Principal Developer Relations Engineer</span></p>
+
+<p style="text-align:left"><span style="font-size:0.7em">                                                         @ Parity Technologies Ltd.</span></p>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left"><span style="font-size:21px">wyhaines@gmail.com</span></p>
+
+<p style="text-align:left"><span style="font-size:21px">@wyhaines in most places</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" data-block-id="51d0eb99d2342a655e6b2ef46779b8b5" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 387.5px; top: 350px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="196.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="196.5" height="1" viewbox="0 0 196.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="196.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="196.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c689c7" style="width: 124px; height: 124px; left: 813.5px; top: 553px; min-width: 1px; min-height: 1px;" data-block-id="85822cce3788acb471f3625361744a36"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1350" data-natural-height="1350" data-src="rubyconfmini-2022-crystal_for_rubyists/66ff22cc7e12bc9d48728388411e1e03.png"></div></div></section><section class="stack" data-id="dd350b99002252319a4793326e64556d"><section data-id="85825fa462830e4c553d4933fba939f8"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="08afcd3f72381779450c6fd5752395d2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Why Crystal?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="953b633a82ff8d052172fcf211383b3a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h3 style="text-align:left">We all appreciate Ruby, or we wouldn't be here, right?<br>
+<br>
+Some of the benefits of Ruby:</h3>
+
+<ul>
+	<li style="text-align:left">blocks</li>
+	<li style="text-align:left">user-friendly syntax</li>
+	<li style="text-align:left">versatile</li>
+	<li style="text-align:left">useful sprinkles of functional programming</li>
+	<li style="text-align:left">dynamic typing generally stays out of the way</li>
+	<li style="text-align:left">strong tooling and testing ecosystem</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="4d9d2d96f99935a74fd26e2be7055ce9"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section><section data-id="badcc312337a083322893689055b84b9"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="978d4e227eff2ac809b5aa7b8eedcc13"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Why Crystal?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="dce9c64d20b50a3e5eecda8f26057ee8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h3 style="text-align:left">Some of the drawbacks of Ruby:</h3>
+
+<ul style="color:rgb(241, 243, 242)">
+	<li style="text-align:left">difficult binary distribution story</li>
+	<li style="text-align:left">raw performance is mediocre</li>
+	<li style="text-align:left">concurrency can be an adventure</li>
+	<li style="text-align:left">static type checking
+	<ul>
+		<li style="text-align:left">bolt on</li>
+		<li style="text-align:left">competing standards</li>
+	</ul>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="244f37641a83dd5d9ac1b8c8ffb2f57a"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section><section data-id="df4ee503074312f128244b2206e5dc3d"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="cff90cfac3c036b422da4f83c25ab961"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Why Crystal?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="26f20699b042ba77cf7e8394f6e36e53"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(241, 243, 242);" dir="ui">
+<h3 style="text-align:left">Crystal has some answers:</h3>
+
+<ul style="color:rgb(241, 243, 242)">
+	<li style="text-align:left"><span style="color:#00FF00">syntactically very similar to Ruby</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="fb816c94683d238540550dd9e28fb3db"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section><section data-id="48b0ebf1119b4ad92b13fc19591f892a"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="3e03a444005b47fd0c85aaffa8b5f0e3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Why Crystal?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="6b05f2ef5a2cbb2854259d5e4c6c15c9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(241, 243, 242);" dir="ui">
+<h3 style="text-align:left">Crystal has some answers:</h3>
+
+<ul style="color:rgb(241, 243, 242)">
+	<li style="text-align:left"><span style="color:#00FF00">syntactically very similar to Ruby</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="91985b99cf65cdbff90e97569458c10b"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-471566" data-block-id="96bb7903d3fa210228b5049dfe1ad2de" style="width: 683px; height: 69px; left: 37px; top: 299.5px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre style="font-size: 16px; line-height: 19px;" class="ruby"><code data-line-numbers="">10.times do
+  puts "Hello, World! I am valid Crystal, and Valid Ruby."
+end</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-d7d40d" data-block-id="3fd97361d91c6fcf9a61229c9b6c384d" style="width: 739px; height: 102px; left: 37px; top: 439px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 14;"><pre style="font-size: 16px; line-height: 19px;"><code data-line-numbers="">num = ARGV.size &gt; 0 ? ARGV[0].to_i : 3
+best = ARGV.size &gt; 1 ? ARGV[1].to_i : 3
+
+puts Array.new(num).map { (rand(6) + 1).to_i }.first(best).sum
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-d6cc44" data-block-id="dcde0d19ab7ec7fce3be93ac27fdd4e9" style="width: 898px; height: 99px; left: 37px; top: 560px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 15;"><pre style="font-size: 16px; line-height: 19px;" class="ruby"><code data-line-numbers="">num = ARGV.size &gt; 0 ? ARGV[0].to_i : 3
+best = ARGV.size &gt; 1 ? ARGV[1].to_i : 3
+
+puts Array(Int32).new(num,0).map { (rand(6) + 1).to_i }.first(best).sum</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-2b3215" data-block-id="1fa7dedb4473f7a52db5dcf039bd5e38" style="height: auto; width: 898px; left: 37px; top: 381px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>These are almost the same....</p>
+</div></div></section><section data-id="b6b5e87eb815bf5a0357a93bc3ad3152"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="947aa73af1309982a7b89a8207cad7d8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Why Crystal?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="5645d8cf933f54b2492d760b9a1508d4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h3 style="text-align:left">Crystal has some answers:</h3>
+
+<ul style="color:rgb(241, 243, 242)">
+	<li style="text-align:left">syntactically very similar to Ruby</li>
+	<li style="text-align:left"><span style="color:#00FF00">compiles (via LLVM) to binaries</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="ffc62c1c657a5746bae8db1e992a7979"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section><section data-id="261a64c842e0831e57075073f3e11dc9"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="61cbef2f54a9a8484cafad9fb6405ef5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Why Crystal?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="e61d67586ecb5c4ef0fe4bf04830e947"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h3 style="text-align:left">Crystal has some answers:</h3>
+
+<ul style="color:rgb(241, 243, 242)">
+	<li style="text-align:left">syntactically very similar to Ruby</li>
+	<li style="text-align:left"><span style="color:#00FF00">compiles (via LLVM) to binaries</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="90d811a61f19a51d7cc73db711b11069"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-6f91b4" data-block-id="2dbcfdee527da21922c779f21edfb223" style="width: 806.4px; height: 113.163px; left: 76.8px; top: 355px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1753" data-natural-height="246" data-lazy-loaded="" data-src="rubyconfmini-2022-crystal_for_rubyists/9bedc3ee45af46906cfe81b75099d428.png"></div></div></section><section data-id="0572e672413b26da575c40bac6d7fb9e"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="98befed6ea24b7237ebd0cc08bfd22d4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Why Crystal?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="e782200dec49ad63fdda3bc4ee07349f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h3 style="text-align:left">Crystal has some answers:</h3>
+
+<ul style="color:rgb(241, 243, 242)">
+	<li style="text-align:left">syntactically very similar to Ruby</li>
+	<li style="text-align:left">compiles (via LLVM) to binaries</li>
+	<li style="text-align:left"><span style="color:#00FF00">binaries tend to execute fast</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="6a60a7242d13e9097bead7212d9b1f77"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section><section data-id="8b88e658f6d27e7d869af20fe483c867"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="6211a63ade7359ee7fa1d4ac907bc42d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Why Crystal?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="680d55a6e4df9d4d341841f5ecb16655"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h3 style="text-align:left">Crystal has some answers:</h3>
+
+<ul style="color:rgb(241, 243, 242)">
+	<li style="text-align:left">syntactically very similar to Ruby</li>
+	<li style="text-align:left">compiles (via LLVM) to binaries</li>
+	<li style="text-align:left"><span style="color:#00FF00">binaries tend to execute fast</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="fe912f1973119f260b919c3b41fd4121"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="table" data-name="table-fb5592" data-block-id="3c8424fe997ad79065af9bbb23e1f519" style="height: auto; min-width: 120px; width: 386.5px; left: 493.5px; top: 420px;"><div class="sl-block-content" style="z-index: 13; font-size: 70%;" data-table-rows="7" data-table-cols="2" data-table-padding="2px"><table><tbody>
+<tr>
+<th style="padding: 2px; width: 232px;">What?</th>
+<th style="padding: 2px;">How Long?</th>
+</tr>
+<tr>
+<td style="padding: 2px; width: 232px;">Ruby 3.1.2 (normal)</td>
+<td style="padding: 2px;">14.29s</td>
+</tr>
+<tr>
+<td style="padding: 2px; width: 232px;">Ruby 3.1.2 (MJit)</td>
+<td style="padding: 2px;">4.55s</td>
+</tr>
+<tr>
+<td style="padding: 2px; width: 232px;">Ruby 3.1.2 (YJit)</td>
+<td style="padding: 2px;">3.35s</td>
+</tr>
+<tr>
+<td style="padding: 2px; width: 232px;">Golang</td>
+<td style="padding: 2px;">0.89s</td>
+</tr>
+<tr>
+<td style="padding: 2px; width: 232px;">Crystal</td>
+<td style="padding: 2px;">0.83s</td>
+</tr>
+<tr>
+<td style="padding: 2px; width: 232px;">Rust</td>
+<td style="padding: 2px;">0.67s</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-668adc" data-block-id="67179c2ef685bc227cd6a1191558461f" style="height: auto; width: 423.5px; left: 16.5px; top: 420px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p style="text-align: left;">Calculate the 42nd</p>
+
+<p style="text-align: left;">Fibonacci number recursively</p>
+</div></div></section><section data-id="dc7b8a7f32400400aef8905c80ae24da"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="def4ee5200e934568decbaa62e011aa8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Why Crystal?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="824c5b899b2e49b96613bc74d5b79ee8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h3 style="text-align:left">Crystal has some answers:</h3>
+
+<ul style="color:rgb(241, 243, 242)">
+	<li style="text-align:left">syntactically very similar to Ruby</li>
+	<li style="text-align:left">compiles (via LLVM) to binaries</li>
+	<li style="text-align:left">binaries tend to execute fast</li>
+	<li style="text-align:left">Golang-like CSP concurrency</li>
+	<li style="text-align:left">still versatile</li>
+	<li style="text-align:left">still productive</li>
+	<li style="text-align:left">still has those functional sprinkles</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="9d5911c220e8106e4e78c340f29c9efd"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section></section><section class="stack" data-id="2f85259af416fcdda7f3ceed9b7a84c1"><section data-id="b819c0d912e8267ffbc395c5b8864e95"><div class="sl-block" data-block-type="text" style="width: 935px; left: 16.5px; top: 33px; height: auto;" data-block-id="a815acb1540085a1183c0366620e216f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">This is a Workshop, not a Talk, Right?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="4d087dda4156374fd98f227f40c9f87a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h3 style="text-align:left">Mostly. :)</h3>
+
+<p> </p>
+
+<p>You might want to install Crystal yourself:</p>
+
+<p> </p>
+
+<p>https://crystal-lang.org/install/</p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="5c0f3af8e535250a064fde5a57c0c71c"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-6bda4e" data-block-id="b36f3f914d46f964ed63e7c12943044a" style="width: 236px; height: 90px; left: 16.5px; top: 420px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre class="bash" style="font-size: 16px; line-height: 19px;"><code data-line-numbers=""># Homebrew
+
+brew update
+brew install crystal</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-a586ff" data-block-id="4b84e21b34598b62e9b6f6c1fd96a679" style="width: 720px; height: 143px; left: 16.5px; top: 539px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 14;"><pre class="bash" style="font-size: 16px; line-height: 19px;"><code data-line-numbers=""># Ubuntu
+# Useful, but not-mandatory prerequisites
+sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libz-dev
+
+# Install with the installer
+curl -fsSL https://crystal-lang.org/install.sh | sudo bash</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-e1dfb3" data-block-id="f10690fb5f871459064d3c70085dd3b0" style="width: 300px; height: 70px; left: 640px; top: 420px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 15;"><pre class="bash" style="font-size: 16px; line-height: 19px;"><code data-line-numbers=""># Via asdf
+asdf plugin add crystal
+asdf install crystal latest</code></pre></div></div></section><section data-id="5bd3a83a28d6cbbd8459f6a6499eabf6"><div class="sl-block" data-block-type="text" style="width: 935px; left: 16.5px; top: 33px; height: auto;" data-block-id="28596f572fb26ece8b1d9083cd1498c8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">This is a Workshop, not a Talk, Right?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 164px;" data-block-id="9da513c47c5cd616f2ada85ac523d06c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h3>For quick experimentation, try the online playground:<br>
+ </h3>
+
+<p> </p>
+
+<h2>https://play.crystal-lang.org</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="c27c29dffc4dc91d42c02052b6639e7b"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section></section><section class="stack" data-id="ef8d7edea3dd51edfd56d004ef626699"><section data-id="bb0fecb9a3e8286944d40ca4d3bdb3bd"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="a0465ba86b0b2ddebda1c3872b5a26b4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 313px;" data-block-id="ac87a44b322ab2aa9fbbcd374663094e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2>Crystal is not Ruby</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="34a9da3eec898ad9e94676fddfa74da4"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section><section data-id="0eb2c4e58270c76a9ddb4275a11c2404"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="022cf7ab0ca879ff0a48fec86a68452d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 313px;" data-block-id="d3b4f6f341750d432f66cde0b7dcf0d7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2><span style="font-size:0.9em">Ruby is interpreted</span></h2>
+
+<h2><span style="font-size:0.9em">Crystal is compiled*</span></h2>
+
+<p> </p>
+
+<p> </p>
+
+<p><span style="font-size:0.9em">* There is a Crystal interpreter, as well</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="1d1878e1373041a97d046e6a7657ad66"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section><section data-id="c7e910e7f9edf12e74494fb72cf8c45e"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="f6a19c6ea82232cf40d5dd29e7df0f5c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 198.5px;" data-block-id="e579afd5cb05ebfad0ffeadb65822e4f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h2><span style="font-size:0.9em">Ruby is dynamically typed</span></h2>
+
+<p><span style="font-size:27px">- the interpreter determines typing at runtime</span></p>
+
+<h2><span style="font-size:0.9em">Crystal is statically typed</span></h2>
+
+<p><span style="font-size:0.9em">- the compiler determines typing at compile time</span></p>
+
+<p> </p>
+
+<p> </p>
+
+<p><span style="font-size:0.9em">* Ruby has static type checking via RBS or Sorbet</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="49dcb88433434fbb539315c3d3f6f956"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section><section data-id="071ea26f42c119aab00e20630c232ee2"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="c527c885fc3ab26e60b46b5d2c8ed5ad"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="0aa80eec43fc969858f4d20b53f55806"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-44f174" data-block-id="f2aa725aeb020bf78b25e27bb8c5b81b" style="width: 500px; height: 49px; left: 230px; top: 291.5px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="ruby" style="font-size: 30px; line-height: 36px;"><code data-line-numbers="">puts 5 + "thing"</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" data-block-id="b732b3a918a0632360b983bc425e8a11" style="height: auto; width: 875px; left: 41px; top: 179.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>What happens when this runs under Ruby or Crystal?</p>
+</div></div></section><section data-id="0d5d043c9b5a34761df9297773f8157d"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="63ec413b67a4f64116662bebbb12662e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="332c09c010426f60c3ca3cb91b4a6a1e"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-44f174" style="width: 500px; height: 49px; left: 230px; top: 291.5px;" data-block-id="b697cef8f7eb324ea91876b92076669e"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="ruby" style="font-size: 30px; line-height: 36px;"><code data-line-numbers="">puts 5 + "thing"</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 600px; left: 180px; top: 179.5px;" data-block-id="00f5c7f8fdf3c81f344e061351373bb0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>What happens when this runs under Ruby?</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-17799d" data-block-id="49c98b3c604934b826cdb06f82bef31e" style="width: 806.4px; height: 74.4014px; left: 76.8px; top: 382.799px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1745" data-natural-height="161" data-lazy-loaded="" data-src="rubyconfmini-2022-crystal_for_rubyists/c1b4ed8cc016fb06d236901cae425da7.png"></div></div></section><section data-id="2e4cb65aea0a8a91a063844e6e28430d"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="256e7624d8399b24937a125a0a1ff552"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="b5dd4c9f9957eff2263542fcb444c62a"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-44f174" style="width: 500px; height: 49px; left: 49px; top: 168px;" data-block-id="59af3f23adcbfdd14be34d147a8d458a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="ruby" style="font-size: 30px; line-height: 36px;"><code data-line-numbers="">puts 5 + "thing"</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 600px; left: 180px; top: 118px;" data-block-id="590c8b2fd2fa25a6e69b02d111c04383"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>What happens when this runs under Crystal?</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-a14209" data-block-id="60befc2d248a95a0007fb022e9b1f40c" style="width: 806.399px; height: 450.255px; left: 127px; top: 228px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1748" data-natural-height="976" data-lazy-loaded="" data-src="rubyconfmini-2022-crystal_for_rubyists/cc9a14c845b0c2f868c7bf26b90afe83.png"></div></div></section><section data-id="125279e3ea361b6079623dc255ac0760"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="d0bbb40a14293ad9ed02bddc7a61da96"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="7234a955dc20395aeff6627968631bdb"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 922.5px; left: 16.5px; top: 313px;" data-block-id="552b79bf1f8dbdd9d5d2506d3c0da352"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h2><span style="font-size:0.9em">Crystal does have <em>type inference</em></span></h2>
+</div></div></section><section data-id="4952bc42d5d5385776882bca0394445f"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="525f26c247ae0b6a0f2d71d64b4b9682"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="a8c6d8c94d591677947c0c04cbccad4b"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 922.5px; left: 16.5px; top: 140px;" data-block-id="0996c9370644e863ed267028311479a7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:0.9em">Crystal does have <em>type inference</em></span></h2>
+
+<p>This works identically in both languages:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-d4bc47" data-block-id="a077847b0b306f19f53ba71d9917c52b" style="width: 500px; height: 227px; left: 230px; top: 297px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre class="ruby" style="font-size: 30px; line-height: 36px;"><code data-line-numbers="">def add(a, b)
+  a + b
+end
+
+puts add(7,9)
+puts add("a", "b")</code></pre></div></div></section><section data-id="13a2e6aa781171771349ba66c36fb3a1"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="fa01785938a4d83a63acfafe03830c42"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="f5fdd4874137aa152436e328783057f8"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 922.5px; left: 16.5px; top: 140px;" data-block-id="8e08f6b08b5cf7260e09fbd2e679b8bc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:0.9em">Crystal does have <em>type inference</em></span></h2>
+
+<p>This works identically in both languages:</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-3fead6" data-block-id="71b9f5fabeb1405fa31676bce0df7699" style="width: 653.996px; height: 393.76px; left: 153.002px; top: 280px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="480" data-natural-height="289" data-lazy-loaded="" data-src="rubyconfmini-2022-crystal_for_rubyists/a8b0ac09c543917789e72c35eefe4188.png"></div></div></section><section data-id="a8facd6105d269d827abf70cf08d33db"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="a0c8b3f72773128d940c52dabf4766e8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="a870b7b2516717fe4b03e3d616eb6806"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 922.5px; left: 16.5px; top: 140px;" data-block-id="2cdf4b391115cb26fdc3c9d8437d40df"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Many methods are the same:</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-32ffa2" data-block-id="42ba59a38ba305df8fde277f4e65625e" style="width: 928.5px; height: 325px; left: 16.5px; top: 221px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre class="ruby" style="font-size: 18px; line-height: 22px;"><code data-line-numbers=""># These lines are the same in both languages:
+
+pp [1,3,5,7,9,2,4,6,8,0].sort.last(3)
+
+pp "I am a 7 collection of words 13 and 92 numbers intermixed 127.".scan(/\d+/)
+
+pp Dir["*"].shuffle[2..5]
+
+require "uri"
+uri = URI.parse "http://foo.com/posts?id=30&amp;limit=5#time=1305298413"
+p uri.scheme
+p uri.host
+p uri.query
+p uri.to_s</code></pre></div></div></section><section data-id="c885fed7eead1e9591029fc6f47837c0"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="89761e0642565c6fac133bbf7cc6f6b0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="38e90d56f5aa781e7e72021c1e6ac40a"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 922.5px; left: 16.5px; top: 140px;" data-block-id="b58585ab9b6d7a1fc5e473fcab76e232"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">But some are not:</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-32ffa2" style="width: 928.5px; height: 429px; left: 16.5px; top: 221px;" data-block-id="b66dc7fba77a3cc6413e28cfe3a2ea75"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre class="ruby" style="font-size: 18px; line-height: 22px;"><code data-line-numbers=""># These lines will only work with Crystal:
+
+# Time.now
+pp Time.local
+pp Time.utc
+
+# pp (1..10).inject(0) {|acc, x| acc += x}
+pp (1..10).reduce(0) {|acc, x| acc += x}
+
+#fib = Hash.new do |h, k|
+#  h[k] = k &lt; 2 ? k : h[k - 2] + h[k - 1]
+#end
+#puts fib[1000]
+
+require "big"
+fib=Hash(Int32, BigInt).new do |h, k|
+  h[k] = (k &lt; 2 ? BigInt.new(k) : h[k - 2] + h[k - 1])
+end
+puts fib[1000]</code></pre></div></div></section><section data-id="96fd30d8420d42cf1ee22ee49de6a2ae"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="e22ced0b3543f924354f3e7f5a8ec364"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="42b7a0df4bd225c737313b4b1fd97028"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 922.5px; left: 0px; top: 346px;" data-block-id="9a3fce7265821bdeeb208d85833ea652"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Concurrency is quite different</span></h2>
+</div></div></section><section data-id="78c0261b68d644421ca1d516c2700aee"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="143ccba261aeb43f8ea38d3d5ef38e3a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="2c2976059ca0d7a29c313951a19936ea"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="50518645e9a27f777ab833a949fc401f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Concurrency is quite different</span></h2>
+
+<h3>Ruby has Fibers, Threads, Ractors, and via Gem libraries, event based concurrency.</h3>
+</div></div></section><section data-id="070da4a880feecdbca3524bb94744395"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="6656fee1323817231b0ddaff237cc722"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="05f18d1155579b8a2d492d5a98821398"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="8b072800ff5ed587fa146bcfc06508ba"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Ruby Fiber based Fib Calculator</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-6f43f2" data-block-id="cac14d794f52d0a90405dcadd2f7fb31" style="width: 923px; height: 445px; left: 16.5px; top: 235px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre class="ruby" style="font-size: 19px; line-height: 23px;"><code data-line-numbers="">fib = Fiber.new do
+  fib_seq = Hash.new do |h, k|
+    h[k] = k &lt; 2 ? k : h[k - 2] + h[k - 1]
+  end
+
+  count = 1
+  loop do
+    Fiber.yield fib_seq[count]
+    count += 1
+  end
+end
+
+pp fib.resume # =&gt; 1
+pp fib.resume # =&gt; 1 
+pp fib.resume # =&gt; 2 
+pp fib.resume # =&gt; 3 
+pp fib.resume # =&gt; 5 
+pp fib.resume # =&gt; 8 
+pp fib.resume # =&gt; 13 </code></pre></div></div></section><section data-id="d7d3b7b5518b0c09734dd741966bf20a"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="0052521fe6b8fd695ebec9ec64562fe7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="77fb628f06992cfcf0165d4949cb6cda"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="f902a8d6bad9a23c135bdfa13c2f150e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Ruby Thread based Fib Calculator</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-6f43f2" style="width: 923px; height: 445px; left: 16.5px; top: 235px;" data-block-id="ece6822c00050c4755272f6032011382"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre class="ruby" style="font-size: 17px; line-height: 20px;"><code data-line-numbers="">queue = Thread::Queue.new
+
+fib = Thread.new do
+  fib_seq = Hash.new do |h, k|
+    h[k] = k &lt; 2 ? k : h[k - 2] + h[k - 1]
+  end
+
+  count = 1
+  loop do
+    sleep 0 while !queue.empty?
+    queue.push fib_seq[count]
+    count += 1
+  end
+end
+
+pp queue.pop # =&gt; 1
+pp queue.pop # =&gt; 1 
+pp queue.pop # =&gt; 2 
+pp queue.pop # =&gt; 3 
+pp queue.pop # =&gt; 5 
+pp queue.pop # =&gt; 8 
+pp queue.pop # =&gt; 13 </code></pre></div></div></section><section data-id="28fc3e2cd7923cc705a2a4662a11ed16"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="25151cb3c4c6e2bedbe9808afad80401"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="9ebf3ad38f08fae198138a03a2d5d0d9"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="657bbb4de6246989aaf1a8afafa18b7b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Crystal Concurrent Fib Calculator</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-6f43f2" style="width: 923px; height: 445px; left: 16.5px; top: 235px;" data-block-id="6e3d28e8f66d346a94ea217e0381ca69"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre class="ruby" style="font-size: 17px; line-height: 20px;"><code data-line-numbers="">require "big"
+channel = Channel(BigInt).new
+
+spawn do
+  fib_seq = Hash(Int32, BigInt).new do |h, k|
+    h[k] = k &lt; 2 ? BigInt.new(k) : h[k - 2] + h[k - 1]
+  end
+
+  count = 1
+  loop do
+    channel.send fib_seq[count]
+    count += 1
+  end
+end
+
+pp channel.receive # =&gt; 1
+pp channel.receive # =&gt; 1 
+pp channel.receive # =&gt; 2 
+pp channel.receive # =&gt; 3 
+pp channel.receive # =&gt; 5 
+pp channel.receive # =&gt; 8 
+pp channel.receive # =&gt; 13 </code></pre></div></div></section><section data-id="7cc22206083d15df8b829955272c30d2"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="b4ebea135ec3a9f1571f3f0cd79e8988"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="ce796450fc65ebd655cf692b251ddc03"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="c5df225164d409040e1fd6ecd4e4f635"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Ruby libraries are Gems</span></h2>
+
+<p> </p>
+
+<p><span style="font-size:51.3px">Crystal libraries are Shards</span></p>
+</div></div></section><section data-id="1e27e9b042638858dc2f99e964e6cfa5"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="7c5c9e08c2ea5a11c681a1c326f1ffe9"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="0a3594466bde5343b3943b2bf1e39381"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="facd3c36ad2412917adc475f2f4496f9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Managing projects and dependencies</span></h2>
+
+<p> </p>
+
+<h3><span style="font-size:51.3px">Ruby: Bundler and Gem</span></h3>
+
+<p> </p>
+
+<p><span style="font-size:51.3px">Crystal: Shard and builtin-tooling</span></p>
+</div></div></section><section data-id="a321067fc53929258baf69a9e7669eec"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="a8d425672b7500511fe625e1d2e37013"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="f0befa040783a3e2dc3bf0c7e0deaf2a"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="37cc4833a1dda2d8c67c30f36607206d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Managing projects and dependencies</span></h2>
+
+<p> </p>
+
+<h3><span style="font-size:51.3px">Ruby: Bundler and Gem</span></h3>
+
+<p> </p>
+
+<p><span style="font-size:51.3px">Crystal: Shard and builtin-tooling</span></p>
+</div></div></section><section data-id="5a5d53b71ac1a397e5ec34064ba1ef8c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="cc73eb85f4c99a35c7821d3b9e5313da"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="1dc27ead1dabd0510791fd6827168536"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="9dca9434aab8e55ab48c3befdf2f665c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Managing projects: Ruby</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-512714" data-block-id="3ae1946f979bac1b12551245e3c23507" style="width: 806.4px; height: 473.727px; left: 74.8px; top: 210px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1818" data-natural-height="1068" data-src="rubyconfmini-2022-crystal_for_rubyists/fab748e3a2266967da81c55e3d2f76a7.png"></div></div></section><section data-id="da5eb5f015b779e93042042196d9e395"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="cdf3d18d1dd8a08783ac91cfd26757d0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="68cda09e04d6325216e474912777ad32"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="1c1314ad54f9947957bb35f6ae8e68ee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Managing projects: Crystal</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-07e373" data-block-id="52352f57c969e1c6a7c7d89f2333b5e4" style="width: 806.4px; height: 342.406px; left: 74.8px; top: 280px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1154" data-natural-height="490" data-src="rubyconfmini-2022-crystal_for_rubyists/56a61de49bbf1a51090174bb5d475bc1.png"></div></div></section><section data-id="b84056dacc9ae58e6843e4129ce4cc18"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="835298fa38efdb2b050a15ab07b5d872"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="831e8c3ca4ef59f01850fa7b90377590"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="00a318e3ac49d071808f85c663b3a2ee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Testing</span></h2>
+
+<h3>Ruby has RSpec and Minitest</h3>
+
+<p> </p>
+
+<h3>Crystal is essentially the same</h3>
+
+<p>Spec (builtin) == RSpec</p>
+
+<p>Minitest (github.com/ysbaddaden/minitest.cr) == Minitest</p>
+</div></div></section><section data-id="e1e0288c13f84295cf250faf09c3aaa3"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="6cb7e691311227003c2c6763f56bcb3f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="dc3716705c6f27488e3c7a0c31f297e0"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bc7114" style="height: auto; width: 923px; left: 16.5px; top: 140px;" data-block-id="f94f4845d28d55351323aceef7db6720"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2><span style="font-size:51.3px">Crystal specs look like this:</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-b8848a" data-block-id="5fa9c516909a0f9b80c3ab380fcdc733" style="width: 923px; height: 453px; left: 16.5px; top: 214px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre class="ruby" style="font-size: 16px; line-height: 19px;"><code data-line-numbers="">describe OpenTelemetry::Event, tags: ["Event"] do
+  it "can create an event with direct initialization" do
+    event = OpenTelemetry::Event.new(
+      name: "test_event",
+      attributes: {
+        "test_attribute" =&gt; "test_value",
+      }
+    )
+    event.name.should eq "test_event"
+    event["test_attribute"].should eq "test_value"
+  end
+
+  it "can create an event with block based initialization" do
+    event = OpenTelemetry::Event.new do |e|
+      e.name = "test_event"
+      e.attributes = {
+        "test_attribute" =&gt; "test_value",
+      }
+    end
+    event.name.should eq "test_event"
+    event["test_attribute"].should eq "test_value"
+  end
+end</code></pre></div></div></section><section data-id="00d45c6d3076c49101e14753f9428b11"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="57020f0314cf431c8af4deeaace54a46"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">What Are The Differences?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 927px; left: 16.5px; top: 313px;" data-block-id="004d4da0a36aa8a0648a40135d4bd4a7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2>Crystal is not Ruby</h2>
+
+<p> </p>
+
+<p>But the syntax is close enough that your Ruby knowledge can bootstrap your productivity!</p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="c781187286bf2d44cf182652fc12564b"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div></section></section><section data-id="29b5a2501afeae906bbdb3969761cf7f"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="fb0904d2cd0f0e3fca737dd57b76f553"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Let's Workshop Something!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 662px; left: 281.5px; top: 140px;" data-block-id="0ee9edf2ba30661844dc87a0d473d487"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="font-size:0.9em">Exercism helps you to learn languages.</span></p>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left"><span style="font-size:0.9em">It has simple programming challenges, in many languages, including both Crystal and Ruby.</span></p>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left"><span style="font-size:0.9em">THIS challenge is to do a Ruby exercism task, and then try to implement the same thing in Crystal.</span></p>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left"><span style="font-size:0.9em">I am here to help!</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="8abb1fe527b4c64c72b124bf5ed191bf"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-84893d" data-block-id="ce4f592f8dbb513fdd02346e75fc1dd8" style="width: 223.5px; height: 182.208px; left: 16.5px; top: 152px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="2230" data-natural-height="1818" data-src="rubyconfmini-2022-crystal_for_rubyists/0897201140599c1d206ed26a84349821.svg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-47f474" data-block-id="14b45d64675afaf90f2946441300d84b" style="height: auto; width: 600px; left: 180px; top: 591px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>https://exercism.org/tracks/ruby</p>
+</div></div></section><section data-id="6dbd6c73f5b698915867c65a66ac644a"><div class="sl-block" data-block-type="text" style="width: 806px; left: 16.5px; top: 33px; height: auto;" data-block-id="72eebd48768b4bc21bc432db9c8c9591"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left">Let's Workshop Something!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 662px; left: 281.5px; top: 140px;" data-block-id="e884aa152557601735b594c88d9921cf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left">EABA v2 is a role playing game rule set with a</p>
+
+<p style="text-align:left">single dice mechanic. All rolls are done with one</p>
+
+<p style="text-align:left">or more d6 dice, usually keeping the best 3 or 4.</p>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left">Given a Ruby program to do these die rolls,</p>
+
+<p style="text-align:left">rewrite it as valid Crystal.</p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 16.5px; top: 118px;" data-block-id="477860983f083f21f805f117c08a4d48"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="110.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110.5" height="1" viewbox="0 0 110.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="110.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="110.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-716f02" style="width: 241.236px; height: 311.999px; left: 18.985px; top: 140px; min-width: 1px; min-height: 1px;" data-block-id="ecdd10c0a492c956d938fefb63ebb591"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="300" data-natural-height="388" data-lazy-loaded="" data-src="rubyconfmini-2022-crystal_for_rubyists/afc29ad9f82acf740ac1ef679dfddc1c.gif"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-85c4d5" style="width: 154.495px; height: 154px; left: 789.005px; top: 374.999px; min-width: 1px; min-height: 1px;" data-block-id="ba98387e5ccf4aa16374f1479437504f"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="936" data-natural-height="933" data-lazy-loaded="" data-src="rubyconfmini-2022-crystal_for_rubyists/395679f13bc4051d33f268e6f1a889be.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-178972" data-block-id="49c67276a65d58fd51df1c562bdc6c28" style="height: auto; width: 795px; left: 18.985px; top: 484.999px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p style="text-align:left">Ruby original:</p>
+
+<p style="text-align:left"><span style="font-size:0.5em">https://github.com/wyhaines/rubyconfmini_2022_crystal_for_rubyists_workshop/tree/main/eaba_roller/eaba_roller.rb</span></p>
+
+<p style="text-align:left"><span style="font-size:1.0em">Crystal Stub:</span></p>
+
+<p style="text-align:left"><span style="font-size:0.5em">https://github.com/wyhaines/rubyconfmini_2022_crystal_for_rubyists_workshop/tree/main/eaba_roller/eaba_roller.cr</span></p>
+</div></div></section><section data-id="4a04fdf7d87dbaecd182059ab4b19a2c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 131.5px; top: 49px; height: auto;" data-block-id="2cc35a0e771d4a5107fe9546e92fb9e1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Crystal for Rubyists</h1>
+
+<p>RubyConf Mini 2022</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-0cb446" style="width: 377px; height: 377px; left: -57px; top: 140px; min-width: 1px; min-height: 1px;" data-block-id="88b32667bdd9171f795835a96a3d62e8"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="960" data-natural-height="960" data-lazy-loaded="" data-src="rubyconfmini-2022-crystal_for_rubyists/50ba62c31bf2da280263f8fd6dfcea21.svg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6e48d0" style="height: auto; width: 550px; left: 387.5px; top: 381px;" data-block-id="24e746339f13c07653ec1ec366ef2c76"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left">Kirk Haines</p>
+
+<p style="text-align:left"><span style="font-size:0.7em">Principal Developer Relations Engineer</span></p>
+
+<p style="text-align:left"><span style="font-size:0.7em">                                                         @ Parity Technologies Ltd.</span></p>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left"><span style="font-size:21px">wyhaines@gmail.com</span></p>
+
+<p style="text-align:left"><span style="font-size:21px">@wyhaines in most places</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d642f6" style="width: auto; height: auto; left: 387.5px; top: 350px;" data-block-id="57274984238584e6c7074b44fcfed06e"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="196.5" data-line-y2="0" data-line-color="#ff1864" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="196.5" height="1" viewbox="0 0 196.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="196.5" y2="0"></line><line class="line-element" stroke="#ff1864" stroke-width="2" x1="0" y1="0" x2="196.5" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-944646" data-block-id="e97494fadc3c679d6a201c3f07e65009" style="height: auto; width: 526px; left: 387.5px; top: 235px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p style="text-align: left;">Thank you! Contact me if you have any questions about anything!</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c689c7" data-block-id="b2ac5399c981158c8cb73ca4fc0d25ec" style="width: 124px; height: 124px; left: 813.5px; top: 553px;"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="1350" data-natural-height="1350" data-src="rubyconfmini-2022-crystal_for_rubyists/66ff22cc7e12bc9d48728388411e1e03.png"></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":2500155,"slug":"rubyconfmini-2022-crystal_for_rubyists","title":"RubyConfMini 2022 Crystal for Rubyists","description":"","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/191186a469dda536a13a95dc8f0b15ef/thumb.jpg?1668527774","view_count":0,"user":{"id":489394,"username":"wyhaines","name":"","description":"","thumbnail_url":"https://www.gravatar.com/avatar/ca8efd0ba834b02b9b7dd34b5c6c2721?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"pro","team_id":null,"settings":{"id":331484,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":42,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":3,"data_updated_at":1668528160773,"font_typekit":"","font_google":"Playfair Display, roboto","time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
