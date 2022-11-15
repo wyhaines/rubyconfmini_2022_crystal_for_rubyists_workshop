@@ -1,12 +1,6 @@
-require "./roller"
-
+# TODO: Write documentation for `EabaRoller`
 module EabaRoller
   VERSION = "0.1.0"
 
-  def self.run
-    roller = Roller.new(ARGV)
-    puts "Rolling #{roller.rolls.size} dice, and keeping the best #{roller.best}:"
-    puts "  #{roller.best_rolls.join(", ")}"
-    puts "  Total: #{roller.total}"
-  end
+  # TODO: Put your code here
 end

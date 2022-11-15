@@ -6,7 +6,7 @@ authors:
 
 targets:
   eaba_roller:
-    main: src/eaba_roller.cr
+    main: src/eaba_roller_bin.cr
 
 crystal: 1.7.0-dev
 
